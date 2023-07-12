@@ -165,8 +165,8 @@ def main(args):
         
         if epoch % 40 == 0:
         # Change the values of randaugm_N and randaugm_M here
-        randaugm_N = randaugm_N * 2
-        randaugm_M = randaugm_M * 2
+        args.randaugm_N = 2 * args.randaugm_N 
+        args.randaugm_M = 2 * args.randaugm_M 
         print('######## The parameters for randaugm increase by 2 times every 40 epoches ########')
 
 
